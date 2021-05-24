@@ -1,0 +1,28 @@
+{
+  "name": "simple-shopping-list",
+  "version": "1.0.0",
+  "description": "Simple Shopping list price calculator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha -r ts-node/register **/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
+    "build": "tsc"
+  },
+  "author": "frincon",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mathjs": "9.3.2",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "prettier": "2.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "mathjs": "9.4.1"
+  }
+}
